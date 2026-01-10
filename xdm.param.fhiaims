@@ -1,5 +1,6 @@
 # XDM V08 --- FHI-aims fit parameters for the XCDM(Z) Release
-# Supplemented with XDM V09 with LC-wPBE update & revPBE(0)
+# Supplemented with XDMv09 with LC-wPBE update & revPBE(0)
+# Supplemented with XDMv10 with revPBE50
 #
 #       Fit By: Kyle R. Bryenton
 #         Date: 2025-05-12
@@ -8,8 +9,13 @@
 #
 # Supplemented: Kyle R. Bryenton
 #         Date: 2025-07-26
-# Code Version: FHIaims_250724_XCDMz
+# Code Version: FHIaims_250724_XDMv09
 #       Commit: 44cae36d148db4cdd96d1b1c238f39646b8e824f
+#
+# Supplemented: Kyle R. Bryenton
+#         Date: 2026-01-10
+# Code Version: FHIaims_260110_XDMv10
+#       Commit: 1c23dbca7143096ca0e254341de1e874ed1f11a7
 #
 # Notes:
 #     - a1 and a2(ang) can safely be rounded to 4 decimal places
@@ -55,6 +61,8 @@ LC-wPBEh-40w-00x     0.16414950   3.31139760       7.861   49
 LC-wPBEh-40w-20x     0.00000000   3.96265658       8.416   49
 revPBE               0.86160221   0.54074724       11.247  49
 revPBE0              0.41616254   2.08733103       7.548   49
+revPBE-50x           0.00000000   3.67103408       7.803   49
+
 
 # XDMbj/defaults_2020_lightdense
 Functional           a1           a2(ang)          MAPD    nset
@@ -73,6 +81,7 @@ LC-wPBEh-40w-00x     0.54527389   2.20143758       7.875   49
 LC-wPBEh-40w-20x     0.43945444   2.68293486       7.809   49
 revPBE               0.92133398   0.38263027       12.359  49
 revPBE0              0.52989826   1.77870503       8.294   49
+revPBE-50x           0.00000000   3.71778793       8.178   49
 
 # XDMbj/defaults_next_lightdenser
 Functional           a1           a2(ang)          MAPD    nset
@@ -91,6 +100,7 @@ LC-wPBEh-40w-00x     0.52711358   2.24918997       7.801   49
 LC-wPBEh-40w-20x     0.40937390   2.76659323       7.779   49
 revPBE               0.92553656   0.36491034       12.440  49
 revPBE0              0.53583920   1.75565532       8.180   49
+revPBE-50x           0.00000000   3.71134003       8.107   49
 
 # XDMbj/defaults_2020_intermediate
 Functional           a1           a2(ang)          MAPD    nset
@@ -109,6 +119,7 @@ LC-wPBEh-40w-00x     0.00000000   3.79322393       9.085   49
 LC-wPBEh-40w-20x     0.00000000   3.94262066       9.785   49
 revPBE               0.72616049   0.92270130       10.556  49
 revPBE0              0.31902954   2.35165643       7.322   49
+revPBE-50x           0.00000000   3.63817424       8.296   49
 
 # XDMbj/defaults_2020_tight
 Functional           a1           a2(ang)          MAPD    nset
@@ -127,6 +138,7 @@ LC-wPBEh-40w-00x     0.94960164   0.70446462       6.851   49
 LC-wPBEh-40w-20x     0.85714412   1.05256932       6.824   49
 revPBE               0.89915582   0.28492491       11.271  49
 revPBE0              0.74945394   0.91993979       7.079   49
+revPBE-50x           0.51569608   1.85945322       6.707   49
 
 # XDMbj/aug2
 Functional           a1           a2(ang)          MAPD    nset
@@ -363,6 +375,7 @@ LC-wPBEh-40w-00x                  153855.54209855  7.535   49
 LC-wPBEh-40w-20x                  201871.55043351  7.994   49
 revPBE                             38462.47014509  13.349  49
 revPBE0                            62566.64143331  7.121   49
+revPBE-50x                        124079.52425042  8.436   49
 
 # XDMz/defaults_2020_lightdense
 Functional                        z_damp           MAPD    nset
@@ -381,6 +394,7 @@ LC-wPBEh-40w-00x                  166098.15644833  7.293   49
 LC-wPBEh-40w-20x                  220737.10512306  7.473   49
 revPBE                             40311.05153460  14.387  49
 revPBE0                            66266.62303945  7.936   49
+revPBE-50x                        133697.84668505  8.119   49
 
 # XDMz/defaults_next_lightdenser
 Functional                        z_damp           MAPD    nset
@@ -399,6 +413,7 @@ LC-wPBEh-40w-00x                  164070.34086146  7.236   49
 LC-wPBEh-40w-20x                  218060.69357469  7.448   49
 revPBE                             39880.10993795  14.521  49
 revPBE0                            65559.47688913  8.020   49
+revPBE-50x                        132296.56568310  8.130   49
 
 # XDMz/defaults_2020_intermediate
 Functional                        z_damp           MAPD    nset
@@ -417,6 +432,7 @@ LC-wPBEh-40w-00x                  152139.37853819  8.197   49
 LC-wPBEh-40w-20x                  199718.02232166  8.949   49
 revPBE                             38613.27568951  11.741  49
 revPBE0                            61798.61155148  6.096   49
+revPBE-50x                        123911.23984025  8.729   49
 
 # XDMz/defaults_2020_tight
 Functional                        z_damp           MAPD    nset
@@ -435,6 +451,7 @@ LC-wPBEh-40w-00x                  110361.00349014  5.733   49
 LC-wPBEh-40w-20x                  124311.31090415  6.622   49
 revPBE                             32842.28307901  12.779  49
 revPBE0                            48548.59396427  7.991   49
+revPBE-50x                         76298.07072492  7.634   49
 
 # XDMz/aug2
 Functional                        z_damp           MAPD    nset
