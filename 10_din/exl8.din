@@ -7,66 +7,58 @@
 #
 #@ fieldasrxn 999
 -1
-1_capsule_AB.xyz
 1
-1_capsule_A.xyz
-1
-1_capsule_B.xyz
+2
+1_frag
 0
 70.11 1_capsule
 -1
-2_Cyc-Pep-2_AB.xyz
-1
-2_Cyc-Pep-2_A.xyz
-1
-2_Cyc-Pep-2_B.xyz
+2
+2
+2_frag
 0
 63.61 2_Cyc-Pep-2
 -1
-3_Ethanol-H-ZSM5_AB.xyz
+3
 1
-3_Ethanol-H-ZSM5_A.xyz
+3_frag1
 1
-3_Ethanol-H-ZSM5_B.xyz
+3_frag2
 0
 36.55 3_Ethanol-H-ZSM5
 -1
-4_ALA-BN_AB.xyz
+4
 1
-4_ALA-BN_A.xyz
+4_frag1
 1
-4_ALA-BN_B.xyz
+4_frag2
 0
 17.83 4_ALA-BN
 -1
-5_gramicidin_AB.xyz
-1
-5_gramicidin_A.xyz
-1
-5_gramicidin_B.xyz
+5
+2
+5_frag
 0
 40.13 5_gramicidin
 -1
-6_helix-rod_AB.xyz
+6
 1
-6_helix-rod_A.xyz
+6_frag1
 1
-6_helix-rod_B.xyz
+6_frag2
 0
 78.80 6_helix-rod
 -1
-7_DNA_AB.xyz
-1
-7_DNA_A.xyz
-1
-7_DNA_B.xyz
+7
+2
+7_frag
 0
 416.08 7_DNA
 -1
-8_Protein-Ligand_AB.xyz
+8
 1
-8_Protein-Ligand_A.xyz
+8_frag1
 1
-8_Protein-Ligand_B.xyz
+8_frag2
 0
 35.70 8_Protein-Ligand
