@@ -1,0 +1,13 @@
+%nprocs=4
+%mem=2GB
+#p hf aug-cc-pvdz output=wfx scf=(conver=6) int=(grid=ultrafine)
+
+title
+
+0 1
+  H   -0.200445087   0.199459330   0.211898637
+  H   -0.621105207   0.618050711   0.656595521
+
+004.12_mon2_methylamine--dihydrogen.wfx
+
+

@@ -1,0 +1,15 @@
+%nprocs=4
+%mem=2GB
+#p hf aug-cc-pvdz output=wfx scf=(conver=6) int=(grid=ultrafine)
+
+title
+
+0 1
+ Kr   -1.930000000   0.000000000   0.000000000
+  C    2.193761000  -0.000209580  -1.793468137
+ Br    2.193761000  -0.000000000  -0.000000000
+  N    2.193761000   0.000209580  -2.945497574
+
+100.01_1.25_krypton--cyanogen_bromide.wfx
+
+

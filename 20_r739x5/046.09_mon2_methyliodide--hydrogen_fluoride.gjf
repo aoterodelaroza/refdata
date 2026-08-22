@@ -1,0 +1,13 @@
+%nprocs=4
+%mem=2GB
+#p hf aug-cc-pvdz output=wfx scf=(conver=6) int=(grid=ultrafine)
+
+title
+
+0 1
+  F    0.000000000  -0.000000000   0.838546773
+  H    0.000000000  -0.000000000  -0.083630000
+
+046.09_mon2_methyliodide--hydrogen_fluoride.wfx
+
+

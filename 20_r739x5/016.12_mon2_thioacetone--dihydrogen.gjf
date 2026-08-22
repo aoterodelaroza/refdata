@@ -1,0 +1,13 @@
+%nprocs=4
+%mem=2GB
+#p hf aug-cc-pvdz output=wfx scf=(conver=6) int=(grid=ultrafine)
+
+title
+
+0 1
+  H   -0.295960331  -0.005509086   0.400326900
+  H   -0.736781187  -0.013714645   0.996597511
+
+016.12_mon2_thioacetone--dihydrogen.wfx
+
+

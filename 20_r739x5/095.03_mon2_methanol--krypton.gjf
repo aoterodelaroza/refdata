@@ -1,0 +1,12 @@
+%nprocs=4
+%mem=2GB
+#p hf aug-cc-pvdz output=wfx scf=(conver=6) int=(grid=ultrafine)
+
+title
+
+0 1
+ Kr   -0.556203062   0.532350803   1.087938392
+
+095.03_mon2_methanol--krypton.wfx
+
+

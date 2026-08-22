@@ -1,0 +1,12 @@
+%nprocs=4
+%mem=2GB
+#p hf aug-cc-pvdz output=wfx scf=(conver=6) int=(grid=ultrafine)
+
+title
+
+0 1
+ Ne   -0.876176978  -0.273790267   0.080544385
+
+071.03_mon2_trimethylphosphine--neon.wfx
+
+

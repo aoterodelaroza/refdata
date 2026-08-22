@@ -1,0 +1,15 @@
+%nprocs=4
+%mem=2GB
+#p hf aug-cc-pvdz output=wfx scf=(conver=6) int=(grid=ultrafine)
+
+title
+
+0 1
+ Ne   -1.400000000   0.000000000   0.000000000
+  H    2.405939248   0.918597844   0.306198411
+  H    2.406499851  -0.919153237  -0.306383541
+  S    1.478720000  -0.000000000  -0.000000000
+
+072.01_1.05_neon--hydrogen_sulfide.wfx
+
+

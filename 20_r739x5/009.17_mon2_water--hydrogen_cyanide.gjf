@@ -1,0 +1,14 @@
+%nprocs=4
+%mem=2GB
+#p hf aug-cc-pvdz output=wfx scf=(conver=6) int=(grid=ultrafine)
+
+title
+
+0 1
+  C    0.971242963  -0.297200736  -2.659408062
+  H    1.334501068  -0.409316505  -3.655043339
+  N    0.580579576  -0.177657583  -1.589713455
+
+009.17_mon2_water--hydrogen_cyanide.wfx
+
+

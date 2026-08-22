@@ -1,0 +1,15 @@
+%nprocs=4
+%mem=2GB
+#p hf aug-cc-pvdz output=wfx scf=(conver=6) int=(grid=ultrafine)
+
+title
+
+0 1
+  B   -0.728763536   0.697511179   1.425468295
+  H   -0.233260540   0.223257375   0.456259798
+  H   -0.063124954   0.920526450   2.383979362
+  H   -1.889361996   0.948270656   1.437380437
+
+007.11_mon2_methanol--borane_H.wfx
+
+

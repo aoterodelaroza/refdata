@@ -1,0 +1,15 @@
+%nprocs=4
+%mem=2GB
+#p hf aug-cc-pvdz output=wfx scf=(conver=6) int=(grid=ultrafine)
+
+title
+
+0 1
+  C   -0.000000000   0.000000000   1.578007125
+  C    0.000803846  -0.000033365   2.773887701
+  H   -0.000000000   0.000000000   0.516560000
+  H    0.001801237   0.000033060   3.835306563
+
+004.18_mon2_nitromethane--ethyne_H.wfx
+
+

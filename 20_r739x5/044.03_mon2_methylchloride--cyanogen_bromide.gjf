@@ -1,0 +1,14 @@
+%nprocs=4
+%mem=2GB
+#p hf aug-cc-pvdz output=wfx scf=(conver=6) int=(grid=ultrafine)
+
+title
+
+0 1
+  C    1.793467982  -0.000774983   1.397312000
+ Br   -0.000000000   0.000000000   1.397312000
+  N    2.945497493  -0.000719008   1.397312000
+
+044.03_mon2_methylchloride--cyanogen_bromide.wfx
+
+

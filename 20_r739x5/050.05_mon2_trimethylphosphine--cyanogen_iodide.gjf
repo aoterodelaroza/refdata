@@ -1,0 +1,14 @@
+%nprocs=4
+%mem=2GB
+#p hf aug-cc-pvdz output=wfx scf=(conver=6) int=(grid=ultrafine)
+
+title
+
+0 1
+  C   -0.983600958  -1.012103863   1.994303487
+  I   -1.340929160  -0.419017347   0.123267693
+  N   -0.777217261  -1.354262871   3.076301168
+
+050.05_mon2_trimethylphosphine--cyanogen_iodide.wfx
+
+

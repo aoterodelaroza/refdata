@@ -91,6 +91,8 @@ parameters, and is exactly the same as the equivalent file in the
 | BDES       | 20_bdes/           | Bond dissociation energies                                     | Back-corrected experimental         | [johnson2003]                                               |
 | BH         | 20_bh/             | Barrier heights                                                | QCISD(T)/MG3, CCSD(T)/MG3           | [lynch2001]                                                 |
 | CT         | 20_ct/             | Dimer binding energies (charge transfer complexes)             | W1/W2                               | [zhao2005]                                                  |
+| D1200      | 20_d1200/          | Dimer binding energies (dispersion, extended chemical space)   | CCSD(T)/CBS                         | [rezac2022]                                                 |
+| D442x10    | 20_d442x10/        | D1200 subset with varying intermolecular distances             | CCSD(T)/CBS                         | [rezac2022]                                                 |
 | G3         | 20_g3/             | Atomization energies                                           | G3                                  | [curtiss2000]                                               |
 | ACONF      | 20_gmtkn_aconf/    | Conformational energies of alkanes                             | CCSD(T)/CBS                         | [gruzman2009],[goerigk2017]                                 |
 | ADIM6      | 20_gmtkn_adim6/    | Dimer binding energies (n-alkane molecules)                    | CCSD(T)/CBS                         | [grimme2010],[goerigk2017]                                  |
@@ -121,8 +123,11 @@ parameters, and is exactly the same as the equivalent file in the
 | SIE11      | 20_gmtkn_sie11/    |                                                                |                                     |                                                             |
 | W4-08      | 20_gmtkn_w4-08/    |                                                                |                                     |                                                             |
 | WATER27    | 20_gmtkn_water27/  |                                                                |                                     |                                                             |
+| HB300SPX   | 20_hb300spx/       | Dissociation curves (H bonds involving S, P, and halogens)     | CCSD(T)/CBS                         | [rezac2020a]                                                |
+| HB375x10   | 20_hb375x10/       | Dissociation curves (OH, NH, and CH hydrogen bonds)            | CCSD(T)/CBS                         | [rezac2020]                                                 |
 | HBC6       | 20_hbc6/           | Dissociation curves double-hydrogen-bonded dimers              | CCSD(T)/CBS                         | [thanthiriwatte2011],[marshall2011]                         |
 | HSG        | 20_hsg/            | Dimer binding energies (protein reaction site)                 | CCSD(T)/CBS                         | [faver2011]                                                 |
+| IHB100x10  | 20_ihb100x10/      | Dissociation curves (charged hydrogen-bonded dimers)           | CCSD(T)/CBS                         | [rezac2020]                                                 |
 | IONICHB    | 20_ionichb/        | Dimer binding energies (charged systems)                       | CCSD(T)/CBS                         | [rezac2012b]                                                |
 | ISOM       | 20_isom/           | Isomerization reaction energies                                | Back-corrected experimental/CCSD(T) | [grimme2007]                                                |
 | KB49       | 20_kb49/           | Dimer binding energies (small molecules)                       | Various (see ref. & web)            | [kannemann2010],[erin-web]                                  |
@@ -132,6 +137,7 @@ parameters, and is exactly the same as the equivalent file in the
 | NBC10EXT   | 20_nbc10ext/       | Dissociation curves (dispersion-bound molecules)               | CCSD(T)/CBS                         | [burns2011],[smith2016],[marshall2011]                      |
 | P26        | 20_p26/            | Conformational energies of small peptides (two wrong, see din) | CCSD(T)/CBS                         | [valdes2008]                                                |
 | PA26       | 20_pa26/           | Adiabatic proton affinities (small molecules)                  | W1-F12, W2-F12, CCSD(T)/CBS         | [parthiban2001],[goerigk2017]                               |
+| R739x5     | 20_r739x5/         | Dissociation curves (repulsive contacts)                       | CCSD(T)/CBS                         | [kriz2021]                                                  |
 | S12L       | 20_s12l/           | Dimer binding energies (large host-guest complexes)            | Back-corrected experimental/QMC     | [grimme2012],[risthaus2013],[ambrosetti2015]                |
 | S22        | 20_s22/            | Dimer binding energies (small molecules)                       | CCSD(T)/CBS                         | [jurecka2006],[podeszwa2010],[marchetti2011],[marshall2011] |
 | S22x5      | 20_s22x5/          | S22 with varying intermolecular distances                      | CCSD(T)/CBS                         | [jurecka2006],[grafova2010]                                 |
@@ -140,6 +146,7 @@ parameters, and is exactly the same as the equivalent file in the
 | S66        | 20_s66/            | Dimer binding energies (small molecules)                       | CCSD(T)/CBS                         | [rezac2011],[dilabio2013]                                   |
 | S66x8      | 20_s66x8/          | S66 with varying intermolecular distances                      | CCSD(F12*)(T)/CBS                   | [rezac2011],[brauer2016]                                    |
 | S66x10     | 20_s66x10/         | S66 with varying intermolecular distances                      | DW-CCSD(T**)-F12/CBS                | [rezac2011]                                                 |
+| SH250x10   | 20_sh250x10/       | Dissociation curves (sigma-hole interactions)                  | CCSD(T)/CBS                         | [kriz2022]                                                  |
 | SSI        | 20_ssi/            | Dimer binding energies (sidechain-sidechain interactions)      | CCSD(T)-F12/CBS                     | [smith2016],[burns2017]                                     |
 | SULFURx8   | 20_sulfur_x8/      | Dimer binding energies (molecules with divalent S)             | CCSD(T)/CBS                         | [mintz2012]                                                 |
 | TM         | 20_tm/             | Ligand-removal energies of transiton metal complexes           | Back-corrected experimental         | [johnson2009]                                               |
@@ -195,6 +202,11 @@ parameters, and is exactly the same as the equivalent file in the
 [smith2016]: http://dx.doi.org/10.1021/acs.jpclett.6b00780
 [burns2017]: https://dx.doi.org/10.1063/1.5001028
 [goerigk2017]: https://dx.doi.org/10.1039/C7CP04913G
+[rezac2020]: https://doi.org/10.1021/acs.jctc.9b01265
+[rezac2020a]: https://doi.org/10.1021/acs.jctc.0c00715
+[kriz2021]: https://doi.org/10.1021/acs.jctc.0c01341
+[kriz2022]: https://doi.org/10.1039/D2CP01600A
+[rezac2022]: https://doi.org/10.1039/D2CP01602H
 [erin-web]: https://erin-r-johnson.github.io/
 
 ## Manifest (crystals)

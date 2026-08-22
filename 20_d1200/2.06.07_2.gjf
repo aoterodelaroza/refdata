@@ -1,0 +1,13 @@
+%nprocs=4
+%mem=2GB
+#p hf aug-cc-pvdz output=wfx scf=(conver=6) int=(grid=ultrafine)
+
+title
+
+0 1
+  N    0.571503160   0.679591787   2.010095275
+  N    1.621210827   0.942624683   2.137970417
+
+2.06.07_2.wfx
+
+
