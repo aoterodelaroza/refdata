@@ -2242,7 +2242,7 @@
 -1
 1.028_methanol--phenol_2
 0
--0857
+-0.857
 1
 1.029_methanol--water_080
 -1
@@ -2322,7 +2322,7 @@
 -1
 1.029_methanol--water_2
 0
--0958
+-0.958
 1
 1.030_phenol--acetaldehyde_080
 -1
@@ -4330,7 +4330,7 @@
 -1
 1.055_water--nitrosomethane_2
 0
--0904
+-0.904
 1
 1.055_water--nitrosomethane_085
 -1
@@ -6090,7 +6090,7 @@
 -1
 2.017_ammonia--acetone_2
 0
--0903
+-0.903
 1
 2.017_ammonia--acetone_085
 -1
@@ -6722,7 +6722,7 @@
 -1
 2.024_ammonia--Nmethylacetamide_2
 0
--0952
+-0.952
 1
 2.025_ammonia--phenol_080
 -1
@@ -8962,7 +8962,7 @@
 -1
 2.052_methylamine--dimethylcarbonate_2
 0
--0807
+-0.807
 1
 2.053_methylamine--dimethylether_080
 -1
@@ -18714,7 +18714,7 @@
 -1
 5.011_ethyne--nitrosomethane_2
 0
--0855
+-0.855
 1
 5.011_ethyne--nitrosomethane_200
 -1
@@ -20002,7 +20002,7 @@
 -1
 6.008_ethyne--Nmethyl2propanimine_2
 0
--0800
+-0.800
 1
 6.009_ethyne--pyridine_080
 -1
@@ -23194,7 +23194,7 @@
 -1
 7.028_benzene--dimethylether_2
 0
--0852
+-0.852
 1
 7.028_benzene--dimethylether_200
 -1
@@ -25538,7 +25538,7 @@
 -1
 7.058_ethene--dimethylether_2
 0
--0907
+-0.907
 1
 7.058_ethene--dimethylether_090
 -1
@@ -26314,7 +26314,7 @@
 -1
 7.067_ethene--nitromethane_2
 0
--0906
+-0.906
 1
 7.067_ethene--nitromethane_200
 -1
@@ -26338,7 +26338,7 @@
 -1
 7.068_ethene--nitrosomethane_2
 0
--0905
+-0.905
 1
 7.068_ethene--nitrosomethane_090
 -1
@@ -27266,7 +27266,7 @@
 -1
 7.079_methane--acetamide_2
 0
--0850
+-0.850
 1
 7.079_methane--acetamide_150
 -1
@@ -27426,7 +27426,7 @@
 -1
 7.081_methane--acetone_2
 0
--0804
+-0.804
 1
 7.081_methane--acetone_150
 -1
@@ -27466,7 +27466,7 @@
 -1
 7.082_methane--acetonitrile_2
 0
--0908
+-0.908
 1
 7.082_methane--acetonitrile_095
 -1
@@ -28658,7 +28658,7 @@
 -1
 7.097_methane--nitromethane_2
 0
--0804
+-0.804
 1
 7.097_methane--nitromethane_090
 -1
@@ -29026,7 +29026,7 @@
 -1
 7.101_methane--phenol_2
 0
--0904
+-0.904
 1
 7.101_methane--phenol_150
 -1
