@@ -64,14 +64,14 @@ The `40_xx` directories contain octave scripts to manipulate the din
 file and the structures, and to perform and evaluate the benchmark
 calculations. Almost all scripts in this repository are written in
 octave, with the occasional bash or awk script. The main script in
-`40_eval` is `eval_driver.m`, which accepts a din file, a target
+`50_eval` is `eval_driver.m`, which accepts a din file, a target
 directory, and an interpretation recipe (e.g. read Quantum ESPRESSO
 outputs). `eval_driver.m` will read and parse the din file, find all
 the necessary energies from the output files in the target directory,
 calculate the corresponding reaction energies, compare to the
 reference energies, and print out a table and some useful statistics.
 
-The `40_fit` directory contains routines for running XDM
+The `50_fit` directory contains routines for running XDM
 parametrizations. The main script is `fit_driver.m`, which works
 pretty much the same as `eval_driver.m`, except in this case the
 intent is to find the XDM damping function coefficients for a given
@@ -84,59 +84,38 @@ parameters, and is exactly the same as the equivalent file in the
 
 | Set        | Directory          | Contents                                                       | Level                               | Refs                                                        |
 |------------|--------------------|----------------------------------------------------------------|-------------------------------------|-------------------------------------------------------------|
+| 3B69       | 20_3b69/           | Three-body energies of molecular trimers                       | CCSD(T)/CBS                         | [rezac2015]                                                 |
 | A24        | 20_a24/            | Dimer binding energies (small molecules, non-equilibrium)      | CCSD(T)/CBS                         | [rezac2013]                                                 |
 | ACHC       | 20_achc/           | Dimer binding energies (adenine-cytosine steps)                | DW-CCSD(T**)-F12/aDZ                | [parker2015],[smith2016]                                    |
 | BAUZA      | 20_bauza/          | Dimer binding energies (halogen-bonded systems)                | CCSD(T)/CBS                         | [bauza2013],[aor2014b]                                      |
 | BBI        | 20_bbi/            | Dimer binding energies (backbone-backbone interactions)        | CCSD(T)-F12/CBS                     | [smith2016],[burns2017]                                     |
-| BDES       | 20_bdes/           | Bond dissociation energies                                     | Back-corrected experimental         | [johnson2003]                                               |
-| BH         | 20_bh/             | Barrier heights                                                | QCISD(T)/MG3, CCSD(T)/MG3           | [lynch2001]                                                 |
+| BDE03      | 20_bde03/          | Bond dissociation energies (back-corrected electronic De)      | Back-corrected experimental         | [johnson2003]                                               |
+| BH         | 20_bh/             | Barrier heights                                                | Best estimates (QCISD/MG3 geometries) | [lynch2001]                                                 |
+| BH9        | 20_bh9/            | Barrier heights and reaction energies (organic/biological)     | CCSD(T)/CBS                         | [prasad2022]                                                |
+| CHAL336    | 20_chal336/        | Dimer binding energies (chalcogen bonds)                       | DLPNO-CCSD(T)/CBS, some W1-F12      | [mehta2021]                                                 |
 | CT         | 20_ct/             | Dimer binding energies (charge transfer complexes)             | W1/W2                               | [zhao2005]                                                  |
+| CYCLO70    | 20_cyclo70/        | Pericyclic barrier heights and reaction energies               | DLPNO-CCSD(T)                       | [alfonsoramos2025]                                          |
 | D1200      | 20_d1200/          | Dimer binding energies (dispersion, extended chemical space)   | CCSD(T)/CBS                         | [rezac2022]                                                 |
 | D442x10    | 20_d442x10/        | D1200 subset with varying intermolecular distances             | CCSD(T)/CBS                         | [rezac2022]                                                 |
+| EXL8       | 20_exl8/           | Binding energies (extra-large dimers)                          | CIM-DLPNO-CCSD(T)||RI-MP2           | [ni2021]                                                    |
 | G3         | 20_g3/             | Atomization energies                                           | G3                                  | [curtiss2000]                                               |
-| ACONF      | 20_gmtkn_aconf/    | Conformational energies of alkanes                             | CCSD(T)/CBS                         | [gruzman2009],[goerigk2017]                                 |
-| ADIM6      | 20_gmtkn_adim6/    | Dimer binding energies (n-alkane molecules)                    | CCSD(T)/CBS                         | [grimme2010],[goerigk2017]                                  |
-| AL2X       | 20_gmtkn_al2x/     |                                                                |                                     |                                                             |
-| ALK6       | 20_gmtkn_alk6/     |                                                                |                                     |                                                             |
-| BH76       | 20_gmtkn_bh76/     |                                                                |                                     |                                                             |
-| BHPERI     | 20_gmtkn_bhperi/   |                                                                |                                     |                                                             |
-| BSR36      | 20_gmtkn_bsr36/    |                                                                |                                     |                                                             |
-| CYCONF     | 20_gmtkn_cyconf/   |                                                                |                                     |                                                             |
-| DARC       | 20_gmtkn_darc/     |                                                                |                                     |                                                             |
-| DC9        | 20_gmtkn_dc9/      |                                                                |                                     |                                                             |
-| G21EA      | 20_gmtkn_g21ea/    |                                                                |                                     |                                                             |
-| G21IP      | 20_gmtkn_g21ip/    |                                                                |                                     |                                                             |
-| G2RC       | 20_gmtkn_g2rc/     |                                                                |                                     |                                                             |
-| HEAVY28    | 20_gmtkn_heavy28/  |                                                                |                                     |                                                             |
-| IDISP      | 20_gmtkn_idisp/    |                                                                |                                     |                                                             |
-| ISO34      | 20_gmtkn_iso34/    |                                                                |                                     |                                                             |
-| ISOL22     | 20_gmtkn_isol22/   |                                                                |                                     |                                                             |
-| MB08-165   | 20_gmtkn_mb08-165/ |                                                                |                                     |                                                             |
-| NBPRC      | 20_gmtkn_nbprc/    |                                                                |                                     |                                                             |
-| O3ADD6     | 20_gmtkn_o3add6/   |                                                                |                                     |                                                             |
-| PA         | 20_gmtkn_pa/       |                                                                |                                     |                                                             |
-| PCONF      | 20_gmtkn_pconf/    |                                                                |                                     |                                                             |
-| RG6        | 20_gmtkn_rg6/      |                                                                |                                     |                                                             |
-| RSE43      | 20_gmtkn_rse43/    |                                                                |                                     |                                                             |
-| S22        | 20_gmtkn_s22/      |                                                                |                                     |                                                             |
-| SCONF      | 20_gmtkn_sconf/    |                                                                |                                     |                                                             |
-| SIE11      | 20_gmtkn_sie11/    |                                                                |                                     |                                                             |
-| W4-08      | 20_gmtkn_w4-08/    |                                                                |                                     |                                                             |
-| WATER27    | 20_gmtkn_water27/  |                                                                |                                     |                                                             |
 | HB300SPX   | 20_hb300spx/       | Dissociation curves (H bonds involving S, P, and halogens)     | CCSD(T)/CBS                         | [rezac2020a]                                                |
 | HB375x10   | 20_hb375x10/       | Dissociation curves (OH, NH, and CH hydrogen bonds)            | CCSD(T)/CBS                         | [rezac2020]                                                 |
 | HBC6       | 20_hbc6/           | Dissociation curves double-hydrogen-bonded dimers              | CCSD(T)/CBS                         | [thanthiriwatte2011],[marshall2011]                         |
 | HSG        | 20_hsg/            | Dimer binding energies (protein reaction site)                 | CCSD(T)/CBS                         | [faver2011]                                                 |
+| ICE13      | 20_ice13/          | Lattice energies of ice polymorphs (absolute and relative)     | Diffusion Monte Carlo               | [dellapia2022]                                              |
 | IHB100x10  | 20_ihb100x10/      | Dissociation curves (charged hydrogen-bonded dimers)           | CCSD(T)/CBS                         | [rezac2020]                                                 |
+| IHD302     | 20_ihd302/         | Inorganic heterocycle dimerization energies                    | DLPNO-CCSD(T)/CBS                   | [gasevic2024]                                               |
 | IONICHB    | 20_ionichb/        | Dimer binding energies (charged systems)                       | CCSD(T)/CBS                         | [rezac2012b]                                                |
 | ISOM       | 20_isom/           | Isomerization reaction energies                                | Back-corrected experimental/CCSD(T) | [grimme2007]                                                |
 | KB49       | 20_kb49/           | Dimer binding energies (small molecules)                       | Various (see ref. & web)            | [kannemann2010],[erin-web]                                  |
 | KB65       | 20_kb65/           | Dimer binding energies (small molecules)                       | Various (see ref. & web)            | [kannemann2010],[erin-web]                                  |
 | L7         | 20_l7/             | Dimer binding energies (large-ish molecules)                   | QCISD(T)/CBS                        | [sedlak2013]                                                |
+| LM26       | 20_lm26/           | Interlayer binding of layered materials (no din file yet)      | RPA                                 | [bjorkman2012]                                              |
 | MBCC-VIE   | 20_mbcc_vie/       | Vertical ionization energies                                   | Experimental/CCSD(T) delta-SCF      | [mckechnie2015]                                             |
 | NBC10EXT   | 20_nbc10ext/       | Dissociation curves (dispersion-bound molecules)               | CCSD(T)/CBS                         | [burns2011],[smith2016],[marshall2011]                      |
 | P26        | 20_p26/            | Conformational energies of small peptides (two wrong, see din) | CCSD(T)/CBS                         | [valdes2008]                                                |
-| PA26       | 20_pa26/           | Adiabatic proton affinities (small molecules)                  | W1-F12, W2-F12, CCSD(T)/CBS         | [parthiban2001],[goerigk2017]                               |
+| POLYPYR21  | 20_polypyr21/      | Relative energies of expanded porphyrins                       | CCSD(T)/cc-pVDZ (no p on H)         | [sylvetsky2020]                                             |
 | R739x5     | 20_r739x5/         | Dissociation curves (repulsive contacts)                       | CCSD(T)/CBS                         | [kriz2021]                                                  |
 | S12L       | 20_s12l/           | Dimer binding energies (large host-guest complexes)            | Back-corrected experimental/QMC     | [grimme2012],[risthaus2013],[ambrosetti2015]                |
 | S22        | 20_s22/            | Dimer binding energies (small molecules)                       | CCSD(T)/CBS                         | [jurecka2006],[podeszwa2010],[marchetti2011],[marshall2011] |
@@ -150,7 +129,8 @@ parameters, and is exactly the same as the equivalent file in the
 | SSI        | 20_ssi/            | Dimer binding energies (sidechain-sidechain interactions)      | CCSD(T)-F12/CBS                     | [smith2016],[burns2017]                                     |
 | SULFURx8   | 20_sulfur_x8/      | Dimer binding energies (molecules with divalent S)             | CCSD(T)/CBS                         | [mintz2012]                                                 |
 | TM         | 20_tm/             | Ligand-removal energies of transiton metal complexes           | Back-corrected experimental         | [johnson2009]                                               |
-| W4-11      | 20_w4-11/          | Atomization energies (small molecules and radicals)            | W4                                  | [karton2011]                                                |
+| W1-SN2-BH  | 20_w1_sn2_bh/      | Barrier heights for SN2 reactions with anionic nucleophiles    | W1w                                 | [karton2026]                                                |
+| W4-17      | 20_w4-17/          | Atomization energies (small molecules and radicals)            | W4                                  | [karton2017]                                                |
 | WATER      | 20_water/          | Binding energies (water clusters)                              | CCSD(T)/CBS                         | [temelso2011]                                               |
 | WATER25x10 | 20_water2510/      | Dimer binding energies (water dimer PES)                       | CCSD(T)/CBS                         | [mas2000],[bukowski2007],[bukowski2008],[smith2016]         |
 | X40        | 20_x40/            | Dimer binding energies (halogen-containing molecules)          | CCSD(T)/CBS                         | [rezac2012a]                                                |
@@ -161,7 +141,6 @@ parameters, and is exactly the same as the equivalent file in the
 [curtiss2000]: https://dx.doi.org/10.1063/1.481336
 [mas2000]: https://dx.doi.org/10.1063/1.1311289
 [lynch2001]: https://dx.doi.org/10.1021/jp004262z
-[parthiban2001]: https://dx.doi.org/10.1063/1.1356014
 [johnson2003]: https://dx.doi.org/10.1021/jp035315q
 [zhao2005]: https://dx.doi.org/10.1021/ct049851d
 [jurecka2006]: http://dx.doi.org/10.1039/B600027D
@@ -169,15 +148,12 @@ parameters, and is exactly the same as the equivalent file in the
 [grimme2007]: http://dx.doi.org/10.1021/jo062446p
 [bukowski2008]: https://dx.doi.org/10.1063/1.2832746
 [valdes2008]: https://dx.doi.org/10.1039/b719294k
-[gruzman2009]: https://dx.doi.org/10.1021/jp903640h
 [johnson2009]: https://dx.doi.org/10.1139/V09-102
 [grafova2010]: https://dx.doi.org/10.1021/ct1002253
-[grimme2010]: https://dx.doi.org/10.1063/1.3382344
 [kannemann2010]: https://dx.doi.org/10.1021/ct900699r
 [podeszwa2010]: http://dx.doi.org/10.1039/B926808A
 [burns2011]: https://dx.doi.org/10.1063/1.3545971
 [faver2011]: https://dx.doi.org/10.1021/ct100563b
-[karton2011]: https://dx.doi.org/10.1016/j.cplett.2011.05.007
 [marchetti2011]: http://dx.doi.org/10.1039/B804334E
 [marshall2011]: https://dx.doi.org/10.1063/1.3659142
 [temelso2011]: https://dx.doi.org/10.1021/jp2069489
@@ -207,15 +183,60 @@ parameters, and is exactly the same as the equivalent file in the
 [kriz2021]: https://doi.org/10.1021/acs.jctc.0c01341
 [kriz2022]: https://doi.org/10.1039/D2CP01600A
 [rezac2022]: https://doi.org/10.1039/D2CP01602H
+[rezac2015]: https://dx.doi.org/10.1021/acs.jctc.5b00281
+[karton2017]: https://dx.doi.org/10.1002/jcc.24854
+[dolgonos2019]: https://dx.doi.org/10.1039/C9CP04488D
+[sylvetsky2020]: https://dx.doi.org/10.1021/acs.jctc.0c00297
+[mehta2021]: https://dx.doi.org/10.1021/acs.jctc.1c00006
+[ni2021]: https://dx.doi.org/10.1021/acs.jctc.0c00831
+[prasad2022]: https://dx.doi.org/10.1021/acs.jctc.1c00694
+[dellapia2022]: https://dx.doi.org/10.1063/5.0102645
+[gasevic2024]: https://dx.doi.org/10.1039/D3CP06217A
+[alfonsoramos2025]: https://dx.doi.org/10.1021/acs.jctc.5c00925
+[karton2026]: https://dx.doi.org/10.1021/acs.jpca.6c00424
+[bjorkman2012]: https://dx.doi.org/10.1103/PhysRevLett.108.235502
+[liang2025]: https://arxiv.org/abs/2508.13468
 [erin-web]: https://erin-r-johnson.github.io/
+
+## Collections (GMTKN55 and GSCDB138)
+
+Two large third-party collections are kept separately from the `20_xx`
+sets, because each ships its own geometries and its own set of din files:
+
+| Collection | Din files             | Structures                   | Subsets | Reactions | Ref              |
+|------------|-----------------------|------------------------------|---------|-----------|------------------|
+| GMTKN55    | `10_din-GMTKN55/`     | `30_collection-GMTKN55/`     | 57      | 1689      | [goerigk2017]    |
+| GSCDB138   | `10_din-GSCDB138/`    | `30_collection-GSCDB138/`    | 138     | 8383      | [liang2025]      |
+
+One din file per subset, and one structure subdirectory per subset with the
+same name (the exception is `bh76rc.din`, which reuses the `bh76/`
+geometries). A few notes worth knowing before you use them:
+
+- The GMTKN55 collection holds 55 official subsets **minus S22 and S66**
+  (those are top-level sets here, `20_s22/` and `20_s66/`) **plus** four
+  GMTKN30-legacy subsets: `cyconf`, `mb08-165`, `o3add6` and `w4-08`.
+- `bh76.din` has **68** reactions, not 76: the official list contains eight
+  exact duplicates, which are removed here. Error statistics from this file
+  are therefore over 68 points and are not directly comparable to published
+  BH76 numbers.
+- `water27.din` carries the current official values, which differ from the
+  `grimme-lab/GMTKN55` GitHub mirror in 26 of 27 entries. The values here
+  are the correct ones.
+- GSCDB138 is pinned to the arXiv-v1 release of the Gold-Standard Chemical
+  Database. Upstream has since renamed it GSCDB137, revised 52 of the 66
+  S66 values and dropped six reactions.
+- Several sets appear both here and in `10_din/` with **different**
+  reference data (A24, S22, S66, X40, and ISO34 as `isom.din`); HSG is the
+  only one that is identical in both places. Pick one deliberately.
 
 ## Manifest (crystals)
 
 | Set       | Directory     | Contents                                                            | Level                       | Refs                   |
 |-----------|---------------|---------------------------------------------------------------------|-----------------------------|------------------------|
-| EE        | 25_ee/        | Enantiomeric excess in solution at the triple point                 | B86bPBE-XDM or experimental | [aor2014a],[aor2016]   |
+| EE        | 25_ee/        | Enantiomeric excess at the chiral eutectic in solution                 | B86bPBE-XDM or experimental | [aor2014],[aor2016]   |
 | POLYMORPH | 25_polymorph/ | First three candidates from all groups for first 5 CCDC blind tests | B86bPBE-XDM                 | [aor2017a],[aor2017b]  |
-| X23       | 25_x23/       | Lattice energies of small molecular crystals                        | Back-corrected experimental | [aor2012],[reilly2013] |
+| PV18      | 25_pv18/      | Polymorph pairs with vibrational and elastic data (no din file yet) | B86bPBE-XDM                 | --                     |
+| X23       | 25_x23/       | Lattice energies of small molecular crystals                        | Back-corrected experimental | [aor2012],[reilly2013],[dolgonos2019] |
 
 [aor2012]: https://dx.doi.org/10.1063/1.4738961
 [reilly2013]: https://dx.doi.org/10.1063/1.4812819
