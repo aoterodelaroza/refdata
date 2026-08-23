@@ -1,6 +1,7 @@
 # Set compiled in: Kannemann et al., JCTC 6 (2010) 1081 from Tang
 # and Toennies, Johnson and Becke, S22 and Zhao and Truhlar. See
 # references in the article
+#
 1
 he_he
 -1
@@ -88,7 +89,7 @@ he_n2_l_1
 -1
 he_n2_l_2
 0
--0.053
+-0.044
 1
 he_n2_t
 -1
@@ -96,7 +97,7 @@ he_n2_t_1
 -1
 he_n2_t_2
 0
--0.066
+-0.062
 1
 he_fcl
 -1
@@ -120,7 +121,7 @@ ch4_c2h4_1
 -1
 ch4_c2h4_2
 0
--0.490
+-0.493
 1
 cf4_cf4
 -1
@@ -136,7 +137,7 @@ sih4_ch4_1
 -1
 sih4_ch4_2
 0
--0.790
+-0.794
 1
 ocs_ocs
 -1
@@ -144,7 +145,7 @@ ocs_ocs_1
 -1
 ocs_ocs_2
 0
--1.720
+-1.722
 1
 c10h8_c10h8_p
 -1
@@ -184,7 +185,7 @@ sih4_hf_1
 -1
 sih4_hf_2
 0
--0.760
+-0.762
 1
 ch4_nh3
 -1
@@ -208,7 +209,7 @@ c2h4_hf_1
 -1
 c2h4_hf_2
 0
--4.470
+-4.468
 1
 ch3f_ch3f
 -1
@@ -216,7 +217,7 @@ ch3f_ch3f_1
 -1
 ch3f_ch3f_2
 0
--2.380
+-2.383
 1
 h2co_h2co
 -1
@@ -224,7 +225,7 @@ h2co_h2co_1
 -1
 h2co_h2co_2
 0
--3.420
+-3.422
 1
 ch3cn_ch3cn
 -1
@@ -232,7 +233,7 @@ ch3cn_ch3cn_1
 -1
 ch3cn_ch3cn_2
 0
--6.190
+-6.193
 1
 hcn_hf
 -1
@@ -240,7 +241,7 @@ hcn_hf_1
 -1
 hcn_hf_2
 0
--7.420
+-7.422
 1
 co2_co2
 -1
@@ -248,7 +249,7 @@ co2_co2_1
 -1
 co2_co2_2
 0
--1.440
+-1.441
 1
 nh3_nh3
 -1

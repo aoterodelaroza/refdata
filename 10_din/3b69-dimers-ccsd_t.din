@@ -1,5 +1,6 @@
 # 3b69 dataset, from:
-# J. Rezac et al., J. Chem. Theory Comput. 2015, 11, 3165
+# J. Rezac, X. Huang, P. Hobza, G. J. O. Beran,
+# J. Chem. Theory Comput. 2015, 11, 3065-3079
 # Contains: dimer interaction energies for 69 small molecular trimers (23x3x3=207)
 # extracted from crystal geometries.
 # CCSD(T)/CBS two-body energies (focal point with aXZ, X=D,T,Q).
