@@ -4,9 +4,13 @@
 # Reference relative energy data are taken from the ESI for the paper
 # (estimated CCSD(T)/CBS column); all values are in kcal/mol.
 # 
-# Conformers WGG10 and WGG12 could NOT be confirmed. They are probably
-# erroneously switched in the paper. Hence, the two have been dropped
-# from this file.
+# Conformers WGG10 and WGG12 are switched in the paper's ESI. Confirmed
+# against BEGDB dataset 9, and independently by the fact that WGG10 and
+# WGG15 are the same structure (max internal-distance deviation 0.018 A)
+# and so must share an energy: with the values as published WGG10 is 3.83
+# against WGG15's 3.37, and with them swapped it is 3.36. The two entries
+# are included here with the corrected (swapped) values; p26_orig.din now
+# carries the same correction.
 #
 # Valdes, H.; Pluháčková, K.; Pitoňák, M.; Řezáč, J. and Hobza,
 # P. Phys. Chem. Chem. Phys., 2008, 10, 2747–2757; DOI:
@@ -168,6 +172,18 @@ WGG01
 WGG13
 0
 4.24
+-1
+WGG01
+1
+WGG10
+0
+3.36
+-1
+WGG01
+1
+WGG12
+0
+3.83
 -1
 GGF15
 1

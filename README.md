@@ -111,7 +111,7 @@ parameters, and is exactly the same as the equivalent file in the
 | KB49       | 20_kb49/           | Dimer binding energies (small molecules)                       | Various (see ref. & web)            | [kannemann2010],[erin-web]                                  |
 | KB65       | 20_kb65/           | Dimer binding energies (small molecules)                       | Various (see ref. & web)            | [kannemann2010],[erin-web]                                  |
 | L7         | 20_l7/             | Dimer binding energies (large-ish molecules)                   | QCISD(T)/CBS                        | [sedlak2013]                                                |
-| LM26       | 20_lm26/           | Interlayer binding of layered materials (no din file yet)      | RPA                                 | [bjorkman2012]                                              |
+| LM26       | 20_lm26/           | Exfoliation energies of layered materials (no din, see README) | RPA                                 | [bjorkman2012]                                              |
 | MBCC-VIE   | 20_mbcc_vie/       | Vertical ionization energies                                   | Experimental/CCSD(T) delta-SCF      | [mckechnie2015]                                             |
 | NBC10EXT   | 20_nbc10ext/       | Dissociation curves (dispersion-bound molecules)               | CCSD(T)/CBS                         | [burns2011],[smith2016],[marshall2011]                      |
 | P26        | 20_p26/            | Conformational energies of small peptides (two wrong, see din) | CCSD(T)/CBS                         | [valdes2008]                                                |
@@ -235,7 +235,7 @@ geometries). A few notes worth knowing before you use them:
 |-----------|---------------|---------------------------------------------------------------------|-----------------------------|------------------------|
 | EE        | 25_ee/        | Enantiomeric excess at the chiral eutectic in solution                 | B86bPBE-XDM or experimental | [aor2014],[aor2016]   |
 | POLYMORPH | 25_polymorph/ | First three candidates from all groups for first 5 CCDC blind tests | B86bPBE-XDM                 | [aor2017a],[aor2017b]  |
-| PV18      | 25_pv18/      | Polymorph pairs with vibrational and elastic data (no din file yet) | B86bPBE-XDM                 | --                     |
+| PV18      | 25_pv18/      | Relative energies of 19 polymorph pairs (per molecule)              | B86bPBE-XDM                 | --                     |
 | X23       | 25_x23/       | Lattice energies of small molecular crystals                        | Back-corrected experimental | [aor2012],[reilly2013],[dolgonos2019] |
 
 [aor2012]: https://dx.doi.org/10.1063/1.4738961

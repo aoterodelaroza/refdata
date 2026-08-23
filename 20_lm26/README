@@ -120,4 +120,21 @@ The included `Ref.dat` file contains the above information and is read by `LM26A
   doi={10.1063/5.0142465}
 }
 
+## Reference data provenance (added 2026-08-23)
 
+The Eref column of Ref.dat is Table IV (RPA binding energies, meV/Ang^2) of
+Bjorkman, Gulans, Krasheninnikov and Nieminen, Phys. Rev. Lett. 108, 235502
+(2012), rounded to one decimal. That is the primary source; the Bjorkman 2014
+JCP paper cited above takes its RPA numbers from it.
+
+Three entries did not match and have been corrected against Table IV:
+  BN        21.6 -> 14.5   (Table IV: 14.49)
+  graphite  19.7 -> 18.3   (Table IV: 18.32)
+  TaS2      17.7 -> 17.9   (Table IV: 17.86)
+The other 23 were already exact roundings of Table IV.
+
+There is deliberately no din file for this set. The reference quantity is an
+exfoliation energy per unit area, obtained by interpolating the minimum of a
+20-point separation curve (see LM26Analyzer.nb). A din block is a fixed linear
+combination of total energies, so it cannot express either the interpolation or
+the per-area normalisation; writing one would misrepresent the data.

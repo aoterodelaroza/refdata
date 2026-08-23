@@ -2,7 +2,13 @@
 # (2nd entry) crystals. These structures have been used in:
 #  Otero-de-la-Roza et al. Angew. Chem. Intl. Ed. 53 (2014) 7879.
 #  Otero-de-la-Roza et al. Crys. Growth & Des. 16 (2016) 6055.
-# The energies come from B86bPBE-XDM calculations in QE. 
+# The energies are NOT B86bPBE-XDM: they are derived from the experimental
+# enantiomeric excesses via dE = RT ln sqrt(4(1+x)/(1-x)) evaluated at
+# T = 293.15 K (the overriding RT line in 25_ee/b86bpbe-xdm/calc_de.m).
+# Inverting them returns the tabulated excesses exactly: ala 60.4, his 93.7,
+# leu 87.9, pro 44.4, tyr 51.7, val 44.1, aldol 34.0 %.
+# For the B86bPBE-XDM values of the same systems use ee_cspacp-b86b.din;
+# for the experimental values at 298.15 K use ee_exp.din.
 0.2500000000
 ala_l
 -0.2500000000
