@@ -1,12 +1,4 @@
 # The P26 set is a benchmark database on isolated small peptides containing an aromatic side chain; quantum chemical study on five peptides (WG,WGG,FGG,GGF and GFA) were presented in the paper; Reference relative energy data are taken from the ESI for the paper (estimated CCSD(T)/CBS column); all values are in kcal/mol.
-#
-# THIS FILE REPRODUCES THE ESI VERBATIM, INCLUDING A KNOWN ERROR: the
-# values for conformers WGG10 and WGG12 are transposed there. BEGDB
-# dataset 9 gives WGG10 = 3.36 and WGG12 = 3.83, and WGG10 is the same
-# structure as WGG15 (max internal-distance deviation 0.018 A), so the
-# two must share an energy - which they do only with the values swapped.
-# Use p26.din, which carries the corrected values, unless you
-# specifically need the numbers as printed.
 # 
 # Valdes, H.; Pluháčková, K.; Pitoňák, M.; Řezáč, J. and Hobza, P. Phys. Chem. Chem. Phys., 2008, 10, 2747–2757; DOI: 10.1039/b719294k 
 #

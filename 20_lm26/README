@@ -120,21 +120,25 @@ The included `Ref.dat` file contains the above information and is read by `LM26A
   doi={10.1063/5.0142465}
 }
 
-## Reference data provenance (added 2026-08-23)
 
-The Eref column of Ref.dat is Table IV (RPA binding energies, meV/Ang^2) of
-Bjorkman, Gulans, Krasheninnikov and Nieminen, Phys. Rev. Lett. 108, 235502
-(2012), rounded to one decimal. That is the primary source; the Bjorkman 2014
-JCP paper cited above takes its RPA numbers from it.
 
-Three entries did not match and have been corrected against Table IV:
-  BN        21.6 -> 14.5   (Table IV: 14.49)
-  graphite  19.7 -> 18.3   (Table IV: 18.32)
-  TaS2      17.7 -> 17.9   (Table IV: 17.86)
-The other 23 were already exact roundings of Table IV.
+## Note on the reference values (2026-08-24)
 
-There is deliberately no din file for this set. The reference quantity is an
-exfoliation energy per unit area, obtained by interpolating the minimum of a
-20-point separation curve (see LM26Analyzer.nb). A din block is a fixed linear
-combination of total energies, so it cannot express either the interpolation or
-the per-area normalisation; writing one would misrepresent the data.
+Ref.dat is left exactly as authored. For the record, Table IV of the Supporting
+Information of Otero-de-la-Roza, LeBlanc and Johnson, J. Phys. Chem. Lett. 11,
+2298 (2020) (jz0c00348_si_001.pdf) - the paper that uses this set - gives the
+reference column to two decimals. Rounded to one decimal it reproduces Ref.dat
+for 25 of the 26 systems; the exception is graphite, 18.32 there against 19.7
+here. That SI also states that h-BN is deliberately NOT the RPA value: "the
+reference exfoliation energies are the RPA values given by Bjorkman, with the
+exception of h-BN", for which they use MP2 (Hummel, Gruber and Gruneis, Eur.
+Phys. J. B 89, 235 (2016)) converted with an in-plane lattice constant of
+2.51 Ang. So BN = 21.6 is correct and must not be "corrected" to the RPA 14.49.
+
+The 26 Area values were verified to reproduce the in-plane cell area of the
+corresponding */*_0.0/geometry.in to 1e-6 Ang^2.
+
+There is deliberately no din file for this set: the reference quantity is an
+exfoliation energy per unit area obtained by interpolating the minimum of a
+20-point separation curve (see LM26Analyzer.nb), which a din block - a fixed
+linear combination of total energies - cannot express.
