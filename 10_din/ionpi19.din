@@ -1,0 +1,186 @@
+# IONPI19: ion-pi interaction energies (cation-pi and anion-pi).
+#
+# S. Spicher, E. Caldeweyher, A. Hansen, S. Grimme,
+# Phys. Chem. Chem. Phys. 23 (2021) 11635-11648.
+# https://doi.org/10.1039/D1CP01333E
+#
+# Contains: 17 association energies of ion-pi complexes plus 2 conformational
+# energies (18 and 19, intramolecular ion-pi interactions). Geometries and
+# reference data were taken from https://github.com/grimme-lab/benchmark-IONPI19
+#
+# Reference level: mixed, all high-level and counterpoise-corrected (see
+# table 1 of the paper). Systems 1-3: CCSD(T)/CBS; 4-6: CCSD(T)/CBS with a
+# modified frozen-core approximation; 7-8: W1-F12; 9-11: CCSD(T)/CBS;
+# 12: W2-F12; 13-14 and 18-19: DLPNO-CCSD(T1)/CBS(aug-cc-pVTZ/aug-cc-pVQZ);
+# 15-16: the same plus deformation energy; 17: DLPNO-CCSD(T1)/CBS(def2-TZVPP/
+# def2-QZVPP) plus deformation energy. The authors estimate a mean error of
+# 0.5 kcal/mol (2.2%), with the largest uncertainty in system 17 (1.9).
+#
+# Geometries: PBEh-3c for the systems compiled in this work (7, 8, and 12-19),
+# with the conformers of 18 and 19 taken from a CREST/GFN2-xTB search. The
+# rest are the geometries of the original references.
+#
+# Naming: NN_ab is the complex, NN_a the neutral (pi) fragment, and NN_b the
+# ion. Reactions 18 and 19 are energy differences between two conformers of the
+# same cation (NN_a minus NN_b). Reaction 16 reuses the calixarene monomer of
+# reaction 15 (15_a).
+#
+# The systems are:
+#   01  benzene + Li+                  11  guanine(6-ring) + Cl-
+#   02  benzene + Na+                  12  C3N3F3 + Cl-
+#   03  benzene + K+                   13  (C3N3F3)2 + Cl-
+#   04  cytosine + Na+                 14  (C3N3F3)3 + Cl-
+#   05  adenine(5-ring) + Li+          15  calixarene + NO3-
+#   06  guanine(5-ring) + Na+          16  calixarene + SCN-
+#   07  anthracene + C3H3+             17  cyclophane host-guest complex
+#   08  C6F6 + Cl-                     18  ester, folded minus extended
+#   09  thymine + Cl-                  19  seesaw, cation/pi minus pi/pi
+#   10  adenine(6-ring) + Cl-
+1
+01_ab
+-1
+01_a
+-1
+01_b
+0
+-39.09
+1
+02_ab
+-1
+02_a
+-1
+02_b
+0
+-25.63
+1
+03_ab
+-1
+03_a
+-1
+03_b
+0
+-19.90
+1
+04_ab
+-1
+04_a
+-1
+04_b
+0
+-14.81
+1
+05_ab
+-1
+05_a
+-1
+05_b
+0
+-25.65
+1
+06_ab
+-1
+06_a
+-1
+06_b
+0
+-19.74
+1
+07_ab
+-1
+07_a
+-1
+07_b
+0
+-21.51
+1
+08_ab
+-1
+08_a
+-1
+08_b
+0
+-14.57
+1
+09_ab
+-1
+09_a
+-1
+09_b
+0
+-10.41
+1
+10_ab
+-1
+10_a
+-1
+10_b
+0
+-1.93
+1
+11_ab
+-1
+11_a
+-1
+11_b
+0
+-5.70
+1
+12_ab
+-1
+12_a
+-1
+12_b
+0
+-18.56
+1
+13_ab
+-1
+13_a
+-1
+13_b
+0
+-33.66
+1
+14_ab
+-1
+14_a
+-1
+14_b
+0
+-45.03
+1
+15_ab
+-1
+15_a
+-1
+15_b
+0
+-29.43
+1
+16_ab
+-1
+15_a
+-1
+16_b
+0
+-26.27
+1
+17_ab
+-1
+17_a
+-1
+17_b
+0
+-37.17
+1
+18_a
+-1
+18_b
+0
+-5.01
+1
+19_a
+-1
+19_b
+0
+-2.42

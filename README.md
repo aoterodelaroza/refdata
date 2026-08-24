@@ -107,6 +107,7 @@ parameters, and is exactly the same as the equivalent file in the
 | IHB100x10  | 20_ihb100x10/      | Dissociation curves (charged hydrogen-bonded dimers)           | CCSD(T)/CBS                         | [rezac2020]                                                 |
 | IHD302     | 20_ihd302/         | Inorganic heterocycle dimerization energies                    | DLPNO-CCSD(T)/CBS                   | [gasevic2024]                                               |
 | IONICHB    | 20_ionichb/        | Dimer binding energies (charged systems)                       | CCSD(T)/CBS                         | [rezac2012b]                                                |
+| IONPI19    | 20_ionpi19/        | Ion-pi interaction energies (cation-pi and anion-pi)           | CCSD(T)/CBS, W1/W2-F12, DLPNO-CCSD(T) | [spicher2021]                                               |
 | ISOM       | 20_isom/           | Isomerization reaction energies                                | Back-corrected experimental/CCSD(T) | [grimme2007]                                                |
 | KB49       | 20_kb49/           | Dimer binding energies (small molecules)                       | Various (see ref. & web)            | [kannemann2010],[erin-web]                                  |
 | KB65       | 20_kb65/           | Dimer binding energies (small molecules)                       | Various (see ref. & web)            | [kannemann2010],[erin-web]                                  |
@@ -189,6 +190,7 @@ parameters, and is exactly the same as the equivalent file in the
 [sylvetsky2020]: https://dx.doi.org/10.1021/acs.jctc.0c00297
 [mehta2021]: https://dx.doi.org/10.1021/acs.jctc.1c00006
 [ni2021]: https://dx.doi.org/10.1021/acs.jctc.0c00831
+[spicher2021]: https://dx.doi.org/10.1039/D1CP01333E
 [prasad2022]: https://dx.doi.org/10.1021/acs.jctc.1c00694
 [dellapia2022]: https://dx.doi.org/10.1063/5.0102645
 [gasevic2024]: https://dx.doi.org/10.1039/D3CP06217A
