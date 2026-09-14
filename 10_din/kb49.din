@@ -2,7 +2,6 @@
 # and Toennies, Johnson and Becke, S22 and Zhao and Truhlar. See
 # references in the article
 # No noble-gas dimers.
-#
 1
 ch4_c2h4
 -1
@@ -10,7 +9,7 @@ ch4_c2h4_1
 -1
 ch4_c2h4_2
 0
--0.493
+-0.490
 1
 cf4_cf4
 -1
@@ -26,7 +25,7 @@ sih4_ch4_1
 -1
 sih4_ch4_2
 0
--0.794
+-0.790
 1
 ocs_ocs
 -1
@@ -34,7 +33,7 @@ ocs_ocs_1
 -1
 ocs_ocs_2
 0
--1.722
+-1.720
 1
 c10h8_c10h8_p
 -1
@@ -74,7 +73,7 @@ sih4_hf_1
 -1
 sih4_hf_2
 0
--0.762
+-0.760
 1
 ch4_nh3
 -1
@@ -98,7 +97,7 @@ c2h4_hf_1
 -1
 c2h4_hf_2
 0
--4.468
+-4.470
 1
 ch3f_ch3f
 -1
@@ -106,7 +105,7 @@ ch3f_ch3f_1
 -1
 ch3f_ch3f_2
 0
--2.383
+-2.380
 1
 h2co_h2co
 -1
@@ -114,7 +113,7 @@ h2co_h2co_1
 -1
 h2co_h2co_2
 0
--3.422
+-3.420
 1
 ch3cn_ch3cn
 -1
@@ -122,7 +121,7 @@ ch3cn_ch3cn_1
 -1
 ch3cn_ch3cn_2
 0
--6.193
+-6.190
 1
 hcn_hf
 -1
@@ -130,7 +129,7 @@ hcn_hf_1
 -1
 hcn_hf_2
 0
--7.422
+-7.420
 1
 co2_co2
 -1
@@ -138,7 +137,7 @@ co2_co2_1
 -1
 co2_co2_2
 0
--1.441
+-1.440
 1
 nh3_nh3
 -1
@@ -378,7 +377,7 @@ ch3sh_hcl_1
 -1
 ch3sh_hcl_2
 0
--4.160
+-4.880
 1
 c2h2_c2h2
 -1
